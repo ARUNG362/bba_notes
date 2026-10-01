@@ -257,7 +257,7 @@ async function gotoDrive(link, subject){
             `${API_URL}?sheet=Logs&operation=log-action`;
 
         // API request
-        const response = await fetch(url, {
+        const response = fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "text/plain"
